@@ -1,0 +1,112 @@
+@charset "UTF-8";
+#btnMenu {
+    display: none;
+}
+
+/* MENU */
+@media (width < 829px) {
+    .cabecalho__listaLinks {
+    display: none;
+}
+}
+
+/* PAGINA 1 */
+@media (width < 1125px) {
+    .conteudo {
+        padding: 2rem;
+        padding-top: 4rem;
+    }
+
+    .conteudo__imagens-informacoes {
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    .conteudo__conteudoSlide p {
+        margin: 0;
+    }
+}
+
+@media (width < 500px) {
+    .conteudo {
+        padding: 1rem;
+        padding-top: 4rem;
+    }
+
+    .conteudo .container {
+        padding: 0 1rem;
+        position: relative;
+    }
+
+    .conteudo__imagensSlide img {
+        border-radius: 10px;
+        margin: auto;
+        display: block;
+        max-width: 17rem;
+    }
+}
+
+/* PAGINA 2 */
+@media (width < 1300px) {
+    
+    .secaoOdsMetas__descricaoItem {
+        max-width: 30rem;
+    }
+
+    .conteudo__conteudoSlide h2::after, .conteudo__ProdutosAcoes h2::after, .conteudo__secaoImpactosResultados h2::after {
+        display: none;
+    }
+
+}
+
+@media (width < 1000px) {
+
+    .secaoOdsMetas__item {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .secaoOdsMetas__descricaoItem {
+        max-width: 36rem;
+        margin: auto;
+    }
+
+    .secaoOdsMetas__descricaoItem a, .contuedo__itemProdutoAcao a {
+        margin: auto;
+        margin-top: 3rem;
+    }
+
+}
+
+/* PÁGINA 3 */
+
+@media (width < 1400px) {
+    .conteudo__listaProdutosAcoes {
+        flex-wrap: wrap;
+        justify-content: center;
+    ;
+}
+
+@media (width < 1000px) {
+    .conteudo__listaProdutosAcoes {
+        flex-direction: column;
+    }
+    .contuedo__itemProdutoAcao {
+        margin: auto;   
+    }
+
+}
+@media (width < 550px) {
+    .contuedo__itemProdutoAcao img {
+        width: 100%;
+        max-width: 23rem;
+    }
+}
+
+/* PAGINA 4 */
+
+@media (width < 825px) {
+    .conteudo__secaoImpactosResultados img {
+        width: 100%;
+    }
+}

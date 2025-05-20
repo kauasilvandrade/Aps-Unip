@@ -1,0 +1,360 @@
+@charset "UTF-8";
+
+/* CORES */
+:root {
+    --branco: #fff;
+    --preto: #000;
+    --verde: #00784A;
+    --amarelo: #FFCF25;
+}
+
+/* CONFIGURAÇÕES GLOBAIS */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.container {
+    max-width: 90rem;
+    margin: auto;
+}
+
+/* SEÇÃO DE INTRODUÇÃO */
+.secaoIntroducao {
+    background-image: url(../images/fundoInicial.png);
+}
+
+.secaoIntroducao, .metas {
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 3rem 3rem 3rem 4rem;
+    background-position: top;
+}
+
+/* CABEÇALHO */
+.cabecalho {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+
+.cabecalho__imgBox {}
+
+.cabecalho__imgBox img {
+    width: 9rem;
+}
+
+/* AREÁ DA NAVEGAÇÃO */
+.cabecalho__menuNavegacao {}
+
+.cabecalho__listaLinks {
+    list-style: none;
+    display: flex;
+    gap: 1.3rem;
+}
+
+.cabecalho__link {
+    position: relative;
+}
+
+.cabecalho__link a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.3em;
+    transition: .5s;
+    font-weight: 600;
+}
+
+.cabecalho__link a:hover {
+    color: var(--verde);
+}
+.cabecalho__link a:hover ~ .underline {
+    width: 100%;
+}
+
+.underline {
+    width: 0%;
+    background-color: yellow;
+    height: 3px;
+    display: block;
+    position: absolute;
+    top: 2rem;
+    border-radius: 5px;
+    transition: .5s;
+}
+
+/* SEÇÃO DE APRESENTAÇÃO  */
+.secaoApresentacao {
+    text-align: center;
+}
+
+.secaoApresentacao h1 {
+    margin-bottom: 2rem;
+    font-size: 2.8em;
+    color: var(--branco);
+}
+
+.secaoApresentacao p, .conteudo__ProdutosAcoes p  {
+    line-height: 1.6em;
+    color: var(--branco);
+    max-width: 47rem;
+    margin: auto;
+    font-size: 1.1em;
+}
+
+/* CONTÉUDO */
+.conteudo {
+    padding: 5rem;
+}
+
+.conteudo .container {
+    padding: 0 3rem;
+    position: relative;
+}
+
+/* BOTÕES DO SLIDE */
+.conteudo__botoesSlide {}
+
+.conteudo__botoesSlide button {
+    position: absolute;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    top: 8rem;
+}
+
+.conteudo__botoesSlide button img {}
+
+#btnVoltar {
+    left: -1rem;
+}
+
+#btnProximo {
+    right: 0;
+}
+
+/* IMAGENS DO SLIDE */
+.conteudo__imagens-informacoes {
+    display: flex;
+    justify-content: space-between;
+    gap: 6rem;
+}
+
+.conteudo__imagensSlide {}
+
+.conteudo__imagensSlide img, .imgBoxOds img {
+    border-radius: 10px;
+    max-width: 38rem;
+    width: 100%;
+}
+
+/* CONTEÚDO DO SLIDE */
+.conteudo__conteudoSlide {
+    position: relative;
+}
+
+.conteudo__conteudoSlide h2, .secaoOdsMetas__descricaoItem h2, .conteudo__ProdutosAcoes h2, .conteudo__secaoImpactosResultados h2 {
+    font-size: 2.1em;
+    margin-bottom: 3rem;
+}
+
+.conteudo__conteudoSlide h2::after, .conteudo__ProdutosAcoes h2::after, .conteudo__secaoImpactosResultados h2::after {
+    content: '';
+    width: 3rem;
+    height: 4px;
+    top: 2.8rem;
+    background-color: var(--amarelo);
+    position: absolute;
+    display: block;
+}
+
+.conteudo__conteudoSlide p {
+    line-height: 1.5em;
+    max-width: 47rem;
+    margin: auto;
+    font-size: 1.1em;
+}
+
+/* PÁGINA DE ODS E METAS */
+.metas {
+    background-image: url(../images/fundoSustentabilidade.jpg);
+    background-position: center;
+}
+
+.secaoOdsMetas {}
+
+
+/* LISTA DE ODS E METAS */
+.secaoOdsMetas__listaOdsMetas {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 10rem;
+}
+
+.secaoOdsMetas__item {
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    gap: 3rem;
+}
+
+.imgBoxOds {}
+
+.secaoOdsMetas__descricaoItem {
+    max-width: 40rem;
+}
+
+#primeiro::after {
+    top: 2.8rem;
+}
+
+.secaoOdsMetas__descricaoItem h2::after {
+    content: '';
+    width: 3rem;
+    height: 4px;
+    top: 5.8rem;
+    background-color: var(--amarelo);
+    position: absolute;
+    display: block;
+}
+
+.secaoOdsMetas__descricaoItem p {
+    line-height: 1.6em;
+    font-size: 1.1em;
+}
+
+.secaoOdsMetas__descricaoItem a, .contuedo__itemProdutoAcao a {
+    text-decoration: none;
+    display: block;
+    text-align: center;
+    margin-top: 3rem;
+    color: var(--branco);
+    background-color: var(--verde);
+    max-width: 11rem;
+    letter-spacing: 1px;
+    padding: 1rem;
+    border-radius: 10px 10px 0px 0px;
+    position: relative;
+    text-transform: uppercase;
+    border: 3px solid var(--verde);
+    transition: .5s;
+}
+
+.secaoOdsMetas__descricaoItem a::after, .contuedo__itemProdutoAcao a::after {
+    content: '';
+    position: absolute;
+    width: 11rem;
+    height: 9px;
+    display: block;
+    background-color: var(--amarelo);
+    left: -3px;
+    bottom: -3px;
+    transition: .5s;
+}
+
+.secaoOdsMetas__descricaoItem a:hover, .contuedo__itemProdutoAcao a:hover {
+    background-color: var(--branco);
+    color: var(--verde);
+}
+
+.secaoOdsMetas__descricaoItem a:hover::after, .contuedo__itemProdutoAcao a:hover::after {
+    background-color: var(--verde);
+}
+
+/* PÁGINA DE PRODUTOS E AÇÕES */
+.produtos {
+    background-image: url(../images/fundoProdutos.png);
+    background-position: center;
+}
+
+.conteudo__ProdutosAcoes {
+    position: relative;
+    margin-bottom: 10rem;
+}
+
+.conteudo__ProdutosAcoes h2 {}
+
+.conteudo__ProdutosAcoes p {
+    color: var(--preto);
+    margin: 0;
+    max-width: 65rem;
+    margin-bottom: 4rem;
+}
+
+.conteudo__listaProdutosAcoes {
+    display: flex;
+    justify-content: space-between;
+    gap: 3rem;
+}
+
+.contuedo__itemProdutoAcao {
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+}
+.contuedo__itemProdutoAcao img {
+    border-radius: 10px 10px 0px 0px;
+}
+
+.contuedo__itemProdutoAcao p {
+    margin: 0;
+    text-align: center;
+}
+.contuedo__itemProdutoAcao a {
+    border-radius: 0px 0px 10px 10px;
+    margin-top: 0;
+}
+
+.contuedo__itemProdutoAcao a::after {
+    width: 9.1rem;
+    border-radius: 0px 0px 10px 10px ;
+}
+
+/* PÁGINA DE IMPACTOS E RESULTADOS */
+.impactos {
+    background-image: url(../images/fundoImpactos.png);
+    background-position: center;
+    background-size: 115rem;
+}
+
+.conteudo__secaoImpactosResultados {
+    position: relative;
+    background-color: var(--branco);
+    margin-bottom: 40px;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+}
+
+.conteudo__secaoImpactosResultados h2::after {
+    top: 3.8rem;
+}
+
+.conteudo__secaoImpactosResultados h3 {
+    font-size: 1.4em;
+    font-weight: bold;
+}
+
+.conteudo__secaoImpactosResultados p {
+    line-height: 1.6em;
+    color: var(--preto);
+    font-size: 1.1em;
+    margin: 1rem 0;
+}
+
+.conteudo__secaoImpactosResultados span {
+    display: block;
+    margin-top: 1rem;
+    color: rgb(128, 128, 128);
+}
+
+.conteudo__secaoImpactosResultados img {}
