@@ -6,8 +6,8 @@
 /* MENU */
 @media (width < 829px) {
     .cabecalho__listaLinks {
-    display: none;
-}
+        display: none;
+    }
 }
 
 /* PAGINA 1 */
@@ -25,9 +25,22 @@
     .conteudo__conteudoSlide p {
         margin: 0;
     }
+
+    .conteudo__botoesSlide button {
+        top: 21rem;
+    }
 }
 
-@media (width < 500px) {
+@media (width < 599px) {
+
+    .secaoIntroducao {
+        padding: 3rem 3rem 3rem 1.5rem;
+    }
+
+    .cabecalho__imgBox img {
+        width: 6rem
+    }
+
     .conteudo {
         padding: 1rem;
         padding-top: 4rem;
@@ -44,6 +57,11 @@
         display: block;
         max-width: 17rem;
     }
+
+    .secaoOdsMetas__descricaoItem h2::after {
+        display: none;
+    }
+    
 }
 
 /* PAGINA 2 */
@@ -85,6 +103,7 @@
         flex-wrap: wrap;
         justify-content: center;
     ;
+    }
 }
 
 @media (width < 1000px) {

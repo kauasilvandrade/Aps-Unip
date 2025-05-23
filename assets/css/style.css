@@ -17,6 +17,7 @@
 
 body {
     font-family: Arial, Helvetica, sans-serif;
+    background-color: #F9F9F9;
 }
 
 .container {
@@ -114,8 +115,11 @@ body {
 }
 
 .conteudo .container {
-    padding: 0 3rem;
+    padding: 3rem;
+    border-radius: 6px;
     position: relative;
+    background-color: var(--branco);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
 }
 
 /* BOTÕES DO SLIDE */
@@ -132,7 +136,7 @@ body {
 .conteudo__botoesSlide button img {}
 
 #btnVoltar {
-    left: -1rem;
+    left: 0rem;
 }
 
 #btnProximo {
@@ -276,7 +280,7 @@ body {
 
 .conteudo__ProdutosAcoes {
     position: relative;
-    margin-bottom: 10rem;
+    padding-bottom: 10rem;
 }
 
 .conteudo__ProdutosAcoes h2 {}
@@ -328,11 +332,9 @@ body {
 
 .conteudo__secaoImpactosResultados {
     position: relative;
-    background-color: var(--branco);
     margin-bottom: 40px;
     border-radius: 10px;
     padding: 20px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
 }
 
 .conteudo__secaoImpactosResultados h2::after {
