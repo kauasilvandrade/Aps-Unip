@@ -54,6 +54,10 @@ body {
 /* AREÁ DA NAVEGAÇÃO */
 .cabecalho__menuNavegacao {}
 
+#btnMenu {
+    display: none;
+}
+
 .cabecalho__listaLinks {
     list-style: none;
     display: flex;
@@ -75,6 +79,7 @@ body {
 .cabecalho__link a:hover {
     color: var(--verde);
 }
+
 .cabecalho__link a:hover ~ .underline {
     width: 100%;
 }
@@ -305,6 +310,7 @@ body {
     align-items: center;
     gap: 2rem;
 }
+
 .contuedo__itemProdutoAcao img {
     border-radius: 10px 10px 0px 0px;
 }
@@ -313,6 +319,7 @@ body {
     margin: 0;
     text-align: center;
 }
+
 .contuedo__itemProdutoAcao a {
     border-radius: 0px 0px 10px 10px;
     margin-top: 0;
