@@ -157,6 +157,11 @@ body {
 
 .conteudo__imagensSlide {}
 
+.slide {
+    display: none;
+}
+
+
 .conteudo__imagensSlide img, .imgBoxOds img {
     border-radius: 10px;
     max-width: 38rem;
@@ -166,6 +171,10 @@ body {
 /* CONTEÚDO DO SLIDE */
 .conteudo__conteudoSlide {
     position: relative;
+}
+
+.conteudo__conteudoSlide h2, .conteudo__conteudoSlide p {
+    display: none;
 }
 
 .conteudo__conteudoSlide h2, .secaoOdsMetas__descricaoItem h2, .conteudo__ProdutosAcoes h2, .conteudo__secaoImpactosResultados h2 {
@@ -188,6 +197,14 @@ body {
     max-width: 47rem;
     margin: auto;
     font-size: 1.1em;
+}
+
+.conteudo__conteudoSlide h2.on, .conteudo__conteudoSlide p.on {
+    display: block;
+}
+
+.on {
+    display: block;
 }
 
 /* PÁGINA DE ODS E METAS */
@@ -334,14 +351,12 @@ body {
 .impactos {
     background-image: url(../images/fundoImpactos.png);
     background-position: center;
-    background-size: 115rem;
 }
 
 .conteudo__secaoImpactosResultados {
     position: relative;
     margin-bottom: 40px;
     border-radius: 10px;
-    padding: 20px;
 }
 
 .conteudo__secaoImpactosResultados h2::after {

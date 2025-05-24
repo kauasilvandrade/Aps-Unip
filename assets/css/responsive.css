@@ -143,15 +143,12 @@
         position: relative;
     }
 
-    .conteudo__imagensSlide img {
-        border-radius: 10px;
-        margin: auto;
-        display: block;
-        max-width: 17rem;
-    }
-
     .secaoOdsMetas__descricaoItem h2::after {
         display: none;
+    }
+
+    .conteudo__conteudoSlide h2, .secaoOdsMetas__descricaoItem h2, .conteudo__ProdutosAcoes h2, .conteudo__secaoImpactosResultados h2 {
+        font-size: 1.8em;
     }
     
 }
